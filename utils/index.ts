@@ -2,7 +2,7 @@
 
 export async function fetchCars(){
 
-    const url = 'https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla';
+    const url = 'https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=carrera';
 
     const headers = {
         'X-RapidAPI-Key': process.env.RAPIDAPI_KEY || "",
