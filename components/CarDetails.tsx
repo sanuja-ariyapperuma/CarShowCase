@@ -3,6 +3,7 @@ import { CarProps } from "@/types";
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import Image from "next/image";
+import { generateCarImageUrl } from "@/utils";
 
 interface CarDetailsProps {
   isOpen: boolean;
@@ -63,7 +64,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                         alt="car model"
                         fill
                         priority
-                        src="/hero.png"
+                        src={generateCarImageUrl(car)}
                         className="object-contain"
                       />
                     </div>
@@ -77,7 +78,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                           alt="car model"
                           fill
                           priority
-                          src="/hero.png"
+                          src={generateCarImageUrl(car, "29")}
                           className="object-contain"
                         />
                       </div>
@@ -90,7 +91,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                           alt="car model"
                           fill
                           priority
-                          src="/hero.png"
+                          src={generateCarImageUrl(car, "33")}
                           className="object-contain"
                         />
                       </div>
@@ -103,7 +104,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                           alt="car model"
                           fill
                           priority
-                          src="/hero.png"
+                          src={generateCarImageUrl(car, "13")}
                           className="object-contain"
                         />
                       </div>
